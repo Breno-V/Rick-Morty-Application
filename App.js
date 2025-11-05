@@ -1,15 +1,17 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "./src/frontend/pages/HomeScreen.js"
+import DetailScreen from "./src/frontend/pages/CharacterDetailScreen.js"; 
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  return(
+  return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='home'>
-        
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: "Personagens" }} />
+        <Stack.Screen name="Detail" component={DetailScreen} options={{ title: "Detalhes" }} />
       </Stack.Navigator>
     </NavigationContainer>
-  )
+  );
 }
