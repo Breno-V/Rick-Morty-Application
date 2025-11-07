@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     listContainer: {
-        padding: 0,
         backgroundColor: "#ccdac5",
         overflow: "hidden",
         borderRadius: 20,
