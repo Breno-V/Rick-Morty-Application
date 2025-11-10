@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 20,
         borderRadius: 10,
+        elevation: 5,
     },
 })
 
