@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         padding: 40,
-        backgroundColor: '#7e9575'
+        backgroundColor: '#d4fac4ff'
     },
 
     image: {

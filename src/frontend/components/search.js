@@ -23,7 +23,7 @@ export default function Search({ onSearch }) {
                 onSubmitEditing={handleSearch}
             />
             <TouchableOpacity onPress={handleSearch}>
-                <Ionicons name="search" size={24} color="black"/>
+                <Ionicons name="search" size={24} color="black" style={styles.icon}/>
             </TouchableOpacity>
         </View>
     )

@@ -8,16 +8,21 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         backgroundColor: "#eee",
         alignItems: 'center',
-        justifyContent: 'space-between',
         gap: 100,
         marginBottom: 10,
         borderRadius: 8,
         height: height * 0.05,
-        width: width * 0.9,
     },
     input: {
         color: "#000",
+        width: width * 0.9,
+        // backgroundColor: 'red',
     },
+
+    icon:{
+        position: 'relative',
+        right: 135,
+    }
 
 });
 
