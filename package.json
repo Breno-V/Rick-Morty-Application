@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "backend": "nodemon src/backend/index.js",
     "frontend": "npx expo start --tunnel",
     "start": "expo start",
     "android": "expo start --android",
