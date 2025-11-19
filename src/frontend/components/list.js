@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FlatList, View, Text, Image, TouchableOpacity } from "react-native";
+import { FlatList, View, Text, Image, TouchableOpacity, Alert } from "react-native";
 import styles from "../styles/ListStyles.js";
 import Loading from './loading.js';
 import Search from "./search.js";
@@ -58,8 +58,10 @@ export default function List({ navigation }) {
             const response = await api.get(`/character/?name=${query}&page=1`);
             setCharacters(response.data.results);
         } catch (error) {
-            console.error(`Nenhum personagem encontrado! (log do erro: ${error}`);
             setCharacters([]); // nenhum resultado encontrado
+            return (
+                Alert.alert("AVISO", "Nenhum personagem encontrado!")
+            )
         } finally {
             setIsSearching(false);
         }
